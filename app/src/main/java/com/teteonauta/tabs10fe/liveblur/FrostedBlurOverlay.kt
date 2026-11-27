@@ -324,7 +324,7 @@ internal object FrostedBlurOverlay {
                             }
 
                             if (drewAnything && firstDrawLogged.compareAndSet(false, true)) {
-                                XposedBridge.log("$tag [$packageName]: Clean neutral frosted glass + enhanced Quick Panel border active (v3.1.1)")
+                                XposedBridge.log("$tag [$packageName]: Clean neutral frosted glass + enhanced Quick Panel border active (v0.1.0)")
                             }
                         } catch (t: Throwable) {
                             if (errorLogged.compareAndSet(false, true)) {
@@ -335,7 +335,7 @@ internal object FrostedBlurOverlay {
                     }
                 }
             )
-            XposedBridge.log("$tag [$packageName]: Hooked BackgroundBlurDrawable.draw (v3.1.1)")
+            XposedBridge.log("$tag [$packageName]: Hooked BackgroundBlurDrawable.draw (v0.1.0)")
             unhook
         } catch (t: Throwable) {
             installed.set(false)

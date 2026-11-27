@@ -171,7 +171,7 @@ class LiveBlurHook : IXposedHookLoadPackage {
 
             FrostedBlurOverlay.install(TAG, packageName, classLoader)?.let { unhooks += it }
 
-            XposedBridge.log("$TAG [$packageName]: One UI 9 Live Blur bridge + flagship animations + app/dialog blur enabled (v3.1.1)")
+            XposedBridge.log("$TAG [$packageName]: One UI 9 Live Blur bridge + flagship animations + app/dialog blur enabled (v0.1.0)")
         } catch (t: Throwable) {
             for (i in unhooks.size - 1 downTo 0) {
                 runCatching { unhooks[i].unhook() }

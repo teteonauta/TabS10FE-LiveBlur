@@ -1,6 +1,6 @@
 id=tabs10fe_liveblur_sf
 name=TabS10FE LiveBlur (SurfaceFlinger Props)
-version=v1.1.0
-versionCode=2
+version=v0.1.0
+versionCode=1
 author=teteonauta
 description=Habilita o suporte nativo a background blur no SurfaceFlinger para complementar o modulo LSPosed TabS10FELiveBlur no Galaxy Tab S10 FE.

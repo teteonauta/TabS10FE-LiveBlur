@@ -4,6 +4,7 @@
 **Blur em tempo real da One UI 9, Animações Flagship `HighEnd` e Vidro Fosco para o Samsung Galaxy Tab S10 FE (`SM-X520`).**
 
 [![Language](https://img.shields.io/badge/Docs-English%20%7C%20Portugu%C3%AAs-blue)](#english)
+[![Status](https://img.shields.io/badge/Status-Experimental%20(v0.1.0)-orange)](#english)
 [![Target](https://img.shields.io/badge/Device-Galaxy%20Tab%20S10%20FE%20(SM--X520)-1428A0)](#requirements--compatibility)
 [![One UI](https://img.shields.io/badge/One%20UI-9.0%20(Android%2017)-0381FE)](#requirements--compatibility)
 [![Framework](https://img.shields.io/badge/Framework-Vector%20%7C%20LSPosed%20%2B%20KernelSU%2FMagisk-success)](#requirements--compatibility)
@@ -14,6 +15,12 @@
 
 <a name="english"></a>
 ## English
+
+> [!WARNING]
+> **Experimental & Vibecoded Project — Read Before Using!**
+> - **Experimental status (`v0.1.0`):** This is an early experimental module, not a mature `1.0` release. Use at your own risk.
+> - **100% Vibecoded:** Full transparency — this entire project was **vibecoded by someone with zero programming experience**, built completely through **Antigravity** using **Gemini 4 Neon**. The original goal was simply so I could personally enjoy live blur on my own Tab S10 FE, and I thought it would be cool to share it with the community.
+> - **Tested Root Environment:** Developed and tested on a Galaxy Tab S10 FE (`SM-X520`) rooted via the **DirtyFrag exploit (`CVE-2026-43284`)** using **DFRoot** by **diablow**, running **diablow's custom KernelSU build for Samsung devices** alongside **Vector** (Xposed).
 
 ### 1. Overview & Problem Solved
 
@@ -34,7 +41,7 @@ On the **Samsung Galaxy Tab S10 FE (`SM-X520`, Exynos 1580 / Xclipse 540 GPU)** 
 | :--- | :--- |
 | **Tested Device** | Samsung Galaxy Tab S10 FE Wi-Fi (`SM-X520`, Exynos 1580 / Xclipse 540) |
 | **OS / Firmware** | One UI 9.0 (Android 17). *May work on `SM-X526B` (5G) or other One UI 9 devices lacking native blur, though tested specifically on `SM-X520`.* |
-| **Root Manager** | **KernelSU** or **Magisk** (required to apply `magisk-module/system.prop` before `SurfaceFlinger` boots) |
+| **Root Manager** | **KernelSU** or **Magisk** (tested specifically with **DFRoot [DirtyFrag / `CVE-2026-43284`]** by **diablow** and **diablow's custom KernelSU for Samsung devices**; required to apply `magisk-module/system.prop` before `SurfaceFlinger` boots) |
 | **Xposed Framework** | **Vector** or **LSPosed** (Xposed API `82+`, `minSdk 31`, `targetSdk 35`) |
 | **Runtime Permissions** | None required by the APK itself; requires enabling the module in Vector/LSPosed with its recommended scope (`xposedscope`) |
 
@@ -146,17 +153,25 @@ zip -r ../TabS10FE-LiveBlur-SurfaceFlinger.zip .
 
 ### 7. Credits & References
 
+- **DFRoot (`DirtyFrag`, `CVE-2026-43284`) & Custom Samsung KernelSU** by **diablow** — Root exploit & custom KernelSU environment used on the test Galaxy Tab S10 FE (`SM-X520`).
 - **[OneUI-9-Native-Blur](https://github.com/RaphaelSolis/OneUI-9-Native-Blur)** by **RaphaelSolis** — Primary architectural reference for bridging Samsung's `setBlurRegionsEx` to standard `setBlurRegions` and flipping Zygote-preloaded `CoreRune` blur flags via `Unsafe`.
 - **[glass-ui](https://github.com/AurelioMo/glass-ui)** by **AurelioMo** — Consulted as visual reference for One UI 9 frosted glass styling.
 - **[Xposed Framework API 82](https://api.xposed.info/)** (`de.robv.android.xposed:api:82`) by **rovo89** — Core hooking API used by the module.
 - **[LSPosed](https://github.com/LSPosed/LSPosed)** & **Vector** — Modern ART/Zygisk Xposed frameworks.
 - **[KernelSU](https://github.com/tiann/KernelSU)** & **[Magisk](https://github.com/topjohnwu/Magisk)** — Root & early-boot `system.prop` module infrastructure.
+- **Antigravity + Gemini 4 Neon** — Used to vibecode and iterate on this entire project.
 
 ---
 ---
 
 <a name="português"></a>
 ## Português
+
+> [!WARNING]
+> **Módulo Experimental & Vibecodado — Leia Antes de Usar!**
+> - **Status experimental (`v0.1.0`):** Este é um módulo experimental em estágio inicial (não é uma versão `1.0` final). Use por sua conta e risco.
+> - **100% Vibecodado:** Com total transparência — tudo neste projeto foi **vibecodado por alguém sem nenhuma experiência em programação**, feito totalmente pelo **Antigravity** usando o **Gemini 4 Neon**. O objetivo inicial era apenas que eu pessoalmente pudesse ter o blur em tempo real no meu Tab S10 FE, mas achei que seria legal compartilhar com todo mundo!
+> - **Ambiente de Root Testado:** Desenvolvido e testado em um Galaxy Tab S10 FE (`SM-X520`) rooteado com o **exploit DirtyFrag (`CVE-2026-43284`)**, usando o **DFRoot** do **diablow** junto com a **versão customizada do KernelSU para dispositivos Samsung** feita por ele, além do **Vector** (Xposed).
 
 ### 1. Visão Geral e Problema Resolvido
 
@@ -177,7 +192,7 @@ O **TabS10FE LiveBlur** resolve todas essas camadas combinando um **módulo comp
 | :--- | :--- |
 | **Dispositivo Testado** | Samsung Galaxy Tab S10 FE Wi-Fi (`SM-X520`, Exynos 1580 / Xclipse 540) |
 | **Sistema / One UI** | One UI 9.0 (Android 17). *Pode funcionar no `SM-X526B` (5G) ou outros Samsung com One UI 9 sem blur nativo, mas foi testado especificamente no `SM-X520`.* |
-| **Gerenciador de Root** | **KernelSU** ou **Magisk** (necessário para aplicar o `magisk-module/system.prop` antes do `SurfaceFlinger` iniciar) |
+| **Gerenciador de Root** | **KernelSU** ou **Magisk** (testado especificamente com o **DFRoot [DirtyFrag / `CVE-2026-43284`]** do **diablow** e sua **versão customizada do KernelSU para dispositivos Samsung**; necessário para aplicar o `magisk-module/system.prop` antes do `SurfaceFlinger` iniciar) |
 | **Framework Xposed** | **Vector** ou **LSPosed** (Xposed API `82+`, `minSdk 31`, `targetSdk 35`) |
 | **Permissões** | O APK não solicita permissões em tempo de execução; basta ativá-lo no Vector/LSPosed aplicando o escopo recomendado (`xposedscope`) |
 
@@ -279,8 +294,10 @@ zip -r ../TabS10FE-LiveBlur-SurfaceFlinger.zip .
 
 ### 7. Créditos e Referências
 
+- **DFRoot (`DirtyFrag`, `CVE-2026-43284`) e KernelSU Customizado para Samsung** por **diablow** — Exploit de root e versão customizada do KernelSU utilizados nos testes no Galaxy Tab S10 FE (`SM-X520`).
 - **[OneUI-9-Native-Blur](https://github.com/RaphaelSolis/OneUI-9-Native-Blur)** por **RaphaelSolis** — Referência arquitetural principal para a ponte `setBlurRegionsEx` → `setBlurRegions` e alteração volátil dos campos estáticos de `CoreRune` via `Unsafe`.
 - **[glass-ui](https://github.com/AurelioMo/glass-ui)** por **AurelioMo** — Consultado como referência visual para estilização de vidro da One UI 9.
 - **[Xposed Framework API 82](https://api.xposed.info/)** (`de.robv.android.xposed:api:82`) por **rovo89** — API base de hooks utilizada pelo módulo.
 - **[LSPosed](https://github.com/LSPosed/LSPosed)** e **Vector** — Frameworks Xposed modernos baseados em ART/Zygisk.
 - **[KernelSU](https://github.com/tiann/KernelSU)** e **[Magisk](https://github.com/topjohnwu/Magisk)** — Infraestrutura de root e carregamento de `system.prop` no início do boot.
+- **Antigravity + Gemini 4 Neon** — Ferramenta e modelo usados para vibecodar todo este projeto.
