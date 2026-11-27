@@ -1,0 +1,1 @@
+-keep class com.teteonauta.tabs10fe.liveblur.LiveBlurHook { *; }

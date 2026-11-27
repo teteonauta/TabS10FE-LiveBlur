@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="xposedscope">
+        <!-- Core system, SystemUI, Launcher & Settings -->
+        <item>android</item>
+        <item>com.android.systemui</item>
+        <item>com.sec.android.app.launcher</item>
+        <item>com.android.settings</item>
+
+        <!-- Core Samsung Apps (One UI 9 native blur buttons, bars & dialogs) -->
+        <item>com.sec.android.gallery3d</item>
+        <item>com.sec.android.app.clockpackage</item>
+        <item>com.sec.android.app.myfiles</item>
+        <item>com.samsung.android.app.notes</item>
+        <item>com.samsung.android.calendar</item>
+        <item>com.samsung.android.app.contacts</item>
+        <item>com.samsung.android.app.reminder</item>
+        <item>com.samsung.android.app.routines</item>
+        <item>com.sec.android.app.popupcalculator</item>
+        <item>com.sec.android.app.voicenote</item>
+        <item>com.sec.android.app.sbrowser</item>
+        <item>com.sec.android.app.camera</item>
+        <item>com.sec.android.daemonapp</item>
+        <item>com.samsung.android.dialer</item>
+        <item>com.samsung.android.messaging</item>
+        <item>com.samsung.android.honeyboard</item>
+        <item>com.samsung.android.oneconnect</item>
+        <item>com.sec.android.app.shealth</item>
+        <item>com.sec.android.app.samsungapps</item>
+        <item>com.samsung.android.goodlock</item>
+        <item>com.samsung.android.lool</item>
+        <item>com.samsung.android.forest</item>
+        <item>com.samsung.android.video</item>
+        <item>com.sec.android.mimage.photoretouching</item>
+        <item>com.samsung.app.newtrim</item>
+
+        <!-- Samsung System UI Extensions, Popups, Air Command & Dialogs -->
+        <item>com.samsung.accessibility</item>
+        <item>com.samsung.android.app.clipboardedge</item>
+        <item>com.samsung.android.app.clockpack</item>
+        <item>com.samsung.android.app.dressroom</item>
+        <item>com.samsung.android.app.find</item>
+        <item>com.samsung.android.app.homestar</item>
+        <item>com.samsung.android.app.sharelive</item>
+        <item>com.samsung.android.app.smartcapture</item>
+        <item>com.samsung.android.app.soundpicker</item>
+        <item>com.samsung.android.app.taskedge</item>
+        <item>com.samsung.android.app.telephonyui</item>
+        <item>com.samsung.android.biometrics.app.setting</item>
+        <item>com.samsung.android.dynamiclock</item>
+        <item>com.samsung.android.edgelightingplus</item>
+        <item>com.samsung.android.game.gamehome</item>
+        <item>com.samsung.android.game.gametools</item>
+        <item>com.samsung.android.incallui</item>
+        <item>com.samsung.android.privacydashboard</item>
+        <item>com.samsung.android.qstuner</item>
+        <item>com.samsung.android.samsungpass</item>
+        <item>com.samsung.android.scloud</item>
+        <item>com.samsung.android.secsoundpicker</item>
+        <item>com.samsung.android.service.aircommand</item>
+        <item>com.samsung.android.service.peoplestripe</item>
+        <item>com.samsung.android.setting.multisound</item>
+        <item>com.samsung.android.sm.devicesecurity</item>
+        <item>com.samsung.android.smartmirroring</item>
+        <item>com.samsung.android.soundassistant</item>
+        <item>com.samsung.android.stickercenter</item>
+        <item>com.samsung.android.themecenter</item>
+        <item>com.samsung.android.themestore</item>
+        <item>com.samsung.android.widget.pictureframe</item>
+        <item>com.samsung.knox.securefolder</item>
+        <item>com.samsung.systemui.lockstar</item>
+        <item>com.samsung.systemui.navillera</item>
+        <item>com.sec.android.app.quicktool</item>
+        <item>com.sec.android.app.soundalive</item>
+        <item>com.sec.android.easyMover</item>
+    </string-array>
+</resources>

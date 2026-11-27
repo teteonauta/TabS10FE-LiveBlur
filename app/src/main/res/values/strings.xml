@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TabS10FELiveBlur</string>
+    <string name="xposed_description">Ativa flags de blur em tempo real e gráficos high-end da One UI 9 no Galaxy Tab S10 FE.</string>
+</resources>

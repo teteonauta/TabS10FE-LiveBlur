@@ -1,0 +1,58 @@
+# Gradle & Build outputs
+.gradle/
+build/
+app/build/
+*/build/
+.kotlin/
+.cxx/
+.externalNativeBuild/
+captures/
+
+# Local environment & SDK paths
+local.properties
+
+# IDE & Editor files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+*.swo
+*~
+
+# Signing keys, keystores & credentials
+*.jks
+*.keystore
+*.p12
+*.pem
+*.pk8
+*.x509.pem
+signing.properties
+keystore.properties
+secrets.properties
+.env
+.env.*
+
+# Logs, debug dumps & profiling artifacts
+*.log
+*logcat*.txt
+*dumpsys*.txt
+debug*.txt
+crash*.txt
+tombstone*
+*.hprof
+*.trace
+
+# Compiled release / distribution packages (published via GitHub Releases)
+dist/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.zip
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
