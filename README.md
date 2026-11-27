@@ -35,6 +35,26 @@ On the **Samsung Galaxy Tab S10 FE (`SM-X520`, Exynos 1580 / Xclipse 540 GPU)** 
 
 ---
 
+### Screenshots
+
+| Quick Panel (Wallpaper) | Quick Panel over White App (Play Store) |
+| :---: | :---: |
+| ![Quick Panel over Wallpaper](photos/quick-panel-wallpaper.jpg) | ![Quick Panel over White App](photos/quick-panel-white-app.jpg) |
+
+| Notifications (Light Mode) | Notifications (Dark Mode) |
+| :---: | :---: |
+| ![Notifications Light Mode](photos/notifications-light.jpg) | ![Notifications Dark Mode](photos/notifications-dark.jpg) |
+
+| Notifications & Media Player (Sunset) | Floating Live Notification & Search Bar |
+| :---: | :---: |
+| ![Notifications & Media Player](photos/notifications-media-sunset.jpg) | ![Floating Live Notification](photos/live-notification-pill.jpg) |
+
+| Lockscreen Widgets & Now Bar | Floating Taskbar Blur |
+| :---: | :---: |
+| ![Lockscreen Widgets & Now Bar](photos/lockscreen-widgets-nowbar.jpg) | ![Floating Taskbar Blur](photos/floating-taskbar-blur.jpg) |
+
+---
+
 ### 2. Requirements & Compatibility
 
 | Requirement | Details |
@@ -183,6 +203,26 @@ No **Samsung Galaxy Tab S10 FE (`SM-X520`, Exynos 1580 / GPU Xclipse 540)** roda
 4. **Métodos JNI proprietários compilados como *stubs* vazios:** na `/system/lib64/libandroid_runtime.so` original do `SM-X520`, `SurfaceControl.nativeSetBlurRegionsEx` e `nativeSetBackgroundBlurColorCurve` são funções vazias (*no-op*), e `nativeSetBlurRegions` zera os campos de `ColorCurve` da Samsung.
 
 O **TabS10FE LiveBlur** resolve todas essas camadas combinando um **módulo complementar minimalista do KernelSU/Magisk (`system.prop`)** com um **módulo Xposed para Vector/LSPosed**, ativando blur nativo em tempo real no Painel Rápido, Notificações, Gaveta de Apps, Recentes, widgets e atalhos da tela de bloqueio, barra do DeX e em mais de 60 apps e diálogos da Samsung — além das animações `HighEnd` de flagship.
+
+---
+
+### Capturas de Tela
+
+| Painel Rápido (Papel de Parede) | Painel Rápido sobre App Branco (Play Store) |
+| :---: | :---: |
+| ![Painel Rápido sobre Papel de Parede](photos/quick-panel-wallpaper.jpg) | ![Painel Rápido sobre App Branco](photos/quick-panel-white-app.jpg) |
+
+| Notificações (Modo Claro) | Notificações (Modo Escuro) |
+| :---: | :---: |
+| ![Notificações Modo Claro](photos/notifications-light.jpg) | ![Notificações Modo Escuro](photos/notifications-dark.jpg) |
+
+| Notificações e Player de Mídia | Notificação Flutuante e Barra de Busca |
+| :---: | :---: |
+| ![Notificações e Player de Mídia](photos/notifications-media-sunset.jpg) | ![Notificação Flutuante](photos/live-notification-pill.jpg) |
+
+| Widgets da Tela de Bloqueio e Now Bar | Blur na Barra de Tarefas Flutuante |
+| :---: | :---: |
+| ![Widgets da Tela de Bloqueio e Now Bar](photos/lockscreen-widgets-nowbar.jpg) | ![Blur na Barra de Tarefas Flutuante](photos/floating-taskbar-blur.jpg) |
 
 ---
 
